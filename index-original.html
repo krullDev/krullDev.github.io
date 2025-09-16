@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Krul.com</title>
+
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            }
+
+            header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            }
+
+            nav {
+            margin-top: 10px;
+            }
+
+            nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            }
+
+            section {
+            padding: 20px;
+            }
+
+            img {
+            border-radius: 50%; /* hace la foto circular */
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Krul.com</h1>
+            
+            <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+            </nav>
+        </header>
+
+        <section id="inicio">
+            <h2>Sobre mí</h2>
+            <p>Hola, esta es mi página y y no se. Esta chida</p>
+            
+            <h3>Mis intereses</h3>
+            
+            <ul>
+                <li>Programación</li>
+                <li>Videojuegos</li>
+                <li>Música</li>
+                <li>Arte Digital</li>
+            </ul>
+
+            <img src="assets/perfil.jpg" alt="Foto de perfil" width="200" height="200">
+        </section>
+
+        <section id="dibujos">
+        <h2>Dibujos</h2>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
+            <figure>
+            <img src="assets/dibujo1.png" alt="Dibujo 1" width="150" height="150">
+            <figcaption>Dibujo 1</figcaption>
+            </figure>
+            <figure>
+            <img src="assets/dibujo2.png" alt="Dibujo 2" width="150" height="150">
+            <figcaption>Dibujo 2</figcaption>
+            </figure>
+            <figure>
+            <img src="assets/dibujo3.png" alt="Dibujo 3" width="150" height="150">
+            <figcaption>Dibujo 3</figcaption>
+            </figure>
+        </div>
+
+        <h3>Video</h3>
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/GADgMqVWg8U?si=r4PSc1L1tVEWmU2F" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+
+        <h3>Audio de muestra</h3>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        </section>
+
+        <section id="contacto">
+        <h2>Contactactame! (mejor no...)</h2>
+
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br><br>
+
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required><br><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="Escribe tu mensaje (que no me llegara) aquí..." required></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+        </section>
+
+    </body>
+
+    <footer style="background-color: #222; color: white; text-align: center; padding: 15px; margin-top: 20px;">
+    <p>Nombre: Krul</p>
+    <p>Correo: krul@krul.krul</p>
+    <p>2025</p>
+    </footer>
+
+</html>
