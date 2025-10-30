@@ -1,0 +1,137 @@
+/* 1. Reset general */
+h1, h2, h3, p, body, div {
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Fuente general */
+body {
+    font-family: Tahoma, Helvetica, sans-serif;
+}
+
+/* 3. Todos los elementos usan box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* 4. Fondo del body */
+body {
+    background-color: white;
+}
+
+/* 5. Estilos de encabezados */
+h1 {
+    font-size: 1.8em;
+    margin: 0.2em;
+    padding: 0.25em;
+}
+h2 {
+    font-size: 1.2em;
+    margin: 0.3em;
+}
+
+/* 6. p y body tamaño de fuente 0.9em */
+p, body {
+    font-size: 0.9em;
+}
+
+/* 7. p con margen inferior de 1em */
+p {
+    margin-bottom: 1em;
+}
+
+/* 8. article */
+article {
+    background-color: #f5f5f5;
+    width: 70%;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1em;
+}
+
+/* 9. div dentro de article */
+article div {
+    clear: right;
+}
+
+/* 10. figure */
+figure {
+    position: relative;
+    float: left;
+}
+
+/* 11. figcaption */
+figcaption {
+    width: 143px;
+    background-color: black;
+    color: white;
+    height: 20px;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    padding: 0 0.5em 0 0;
+}
+
+/* 12. clase overimage */
+.overimage {
+    position: absolute;
+    left: 1px;
+    top: 3px;
+}
+
+/* 13. clase information */
+.information {
+    overflow: auto;
+    border-top: 1px solid #ff8800;
+}
+
+/* 14. clase linkbutton */
+.linkbutton {
+    background-color: #FF8800;
+    color: white;
+    text-decoration: none;
+    font-size: 0.75em;
+    float: right;
+    padding: 0.8em;
+    margin-right: 1em;
+}
+
+/* 15. footer */
+footer {
+    background-color: #474747;
+    color: #cbcbcb;
+    min-width: 100%;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+/* 16. color de h2 dentro de footer */
+footer h2 {
+    color: #a4a1a1;
+}
+
+/* 17. clase footer */
+.footer {
+    float: left;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    border-top: 1px solid #ff8800;
+    max-width: 100%;
+}
+
+/* 18. imágenes dentro de footer */
+.footer img {
+    margin: 3px;
+    width: 45px;
+    height: 45px;
+}
+
+/* 19. clase footerSection */
+.footerSection {
+    margin-right: 1.5em;
+    padding: 0.26em;
+    overflow: hidden; /* "oculta" en CSS */
+    min-width: 70%;
+    border-top: 1px solid #ff8800;
+}

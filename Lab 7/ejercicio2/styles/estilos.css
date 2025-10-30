@@ -1,0 +1,114 @@
+/* Imagen de fondo anclada arriba */
+body {
+  font-family: "Six Caps", "Impact", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+  color: #222;
+  background-image: url('../images/art-background4.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-size: 1rem; /* Base dinámica, ajustable en html {font-size} */
+}
+
+/* CABECERA (Tienda Hipotética de Arte) */
+header {
+  width: 26.25rem; /* 420px base 16px */
+  background: rgba(255, 255, 255, 0.95);
+  display: inline-block;
+  padding: 1.125rem 1.375rem; /* 18px 22px */
+  margin-top: 0;
+  margin-left: 5rem; /* 80px */
+  box-shadow: 0 0.375rem 1.125rem rgba(0, 0, 0, 0.35);
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+header h1 {
+  font-family: "Six Caps", "Impact", "Arial Narrow", Arial, sans-serif;
+  font-size: clamp(1.5rem, 4vw, 2.625rem); /* Escala según pantalla */
+  letter-spacing: 0.0625rem;
+  line-height: 1;
+  color: #111;
+}
+
+header h2 {
+  font-family: Arial, sans-serif;
+  font-size: clamp(0.625rem, 1.5vw, 0.75rem);
+  font-weight: 400;
+  color: #666;
+  margin-top: 0.375rem;
+}
+
+/* PANEL "En Construcción" */
+article {
+  width: 30.25rem;
+  margin-top: 7.5rem;
+  margin-left: 5rem;
+  border-radius: 0.1875rem;
+  box-shadow: 0 0.5rem 1.375rem rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(0.125rem);
+}
+
+/* Sección superior gris */
+article > h2 {
+  background: rgba(235, 235, 235, 0.9);
+  padding: 0.75rem 0.875rem;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  color: #222;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.05);
+}
+
+/* Texto principal */
+article p {
+  padding: 0.5rem 1.25rem 0.25rem 1.25rem;
+  color: #111;
+  font-family: Arial, sans-serif;
+  font-size: clamp(0.875rem, 1.8vw, 0.9375rem);
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+}
+
+/* Párrafo del tiempo */
+.article-time {
+  text-align: left;
+  margin: 0.125rem 1.25rem 1rem 1.25rem;
+}
+
+/* Cajita gris solo alrededor del texto */
+.article-time .tiempo {
+  display: inline-block;
+  background: #555;
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.25);
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+}
+
+/* Pie con íconos sociales */
+article footer {
+  background: rgba(240, 240, 240, 0.9);
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.625rem 0.875rem;
+  border-top: 0.0625rem solid rgba(0, 0, 0, 0.05);
+}
+
+article footer a {
+  color: #0066cc;
+  font-size: clamp(0.75rem, 1.5vw, 0.8125rem);
+}
+
+article footer img {
+  width: 1.125rem;
+  height: 1.125rem;
+  vertical-align: middle;
+  opacity: 0.95;
+}
