@@ -1,0 +1,172 @@
+/* RESET Y CONFIGURACIÓN GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f4ef; /* fondo claro */
+  color: #333;
+  line-height: 1.6;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* ENCABEZADO */
+header {
+  background-color: #5c4033; /* marrón oscuro */
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f1d3b3;
+}
+
+/* SECCIÓN HERO */
+.hero {
+  background-color: #e8d4b0; /* beige claro */
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  color: #3e2723;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1rem;
+}
+
+/* SECCIÓN MENÚ */
+.menu {
+  background-color: #fffaf3;
+  padding: 30px 20px;
+}
+
+.menu h3 {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #3e2723;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu .item {
+  background-color: #fff2df;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu .item h4 {
+  color: #4e342e;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #5c4033;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  margin-top: auto; /* <- Esto asegura que quede al final */
+}
+
+/* RESPONSIVIDAD */
+
+/* TABLET (menú en columna, centrado) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header h1 {
+    margin-bottom: 10px;
+  }
+
+  .menu-items {
+    justify-content: center;
+  }
+
+  .menu .item {
+    flex: 1 1 45%;
+  }
+}
+
+/* MÓVIL (todo en una sola columna) */
+@media (max-width: 767px) {
+  header {
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 30px 15px;
+  }
+
+  .menu {
+    padding: 20px;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu .item {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}

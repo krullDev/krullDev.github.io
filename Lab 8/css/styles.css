@@ -1,0 +1,141 @@
+/*Estilos generales*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+}
+section {
+  margin-bottom: 40px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+/*EJERCICIO 1: Contenedor Flex Básico*/
+.ej1-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid #555;
+}
+.ej1-container div {
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/*EJERCICIO 2: Dirección de Flex y Wrap*/
+.ej2-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  border: 2px solid #555;
+  padding: 10px;
+}
+.ej2-container div {
+  background-color: #cfc;
+  padding: 20px;
+  flex: 1 1 100px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .ej2-container {
+    flex-direction: column;
+  }
+}
+
+/*EJERCICIO 3: Menú Responsive*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+nav a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*EJERCICIO 4: Tarjetas Flexibles*/
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+.card {
+  background-color: #eef;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  flex: 1 1 200px;
+  max-width: 300px;
+  padding: 15px;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/*EJERCICIO 5: Layout Completo*/
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border: 2px solid #444;
+}
+header, footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  height: 80px;
+  flex-shrink: 0;
+}
+main {
+  display: flex;
+  flex: 1;
+}
+aside {
+  background-color: #ddd;
+  width: 200px;
+  flex-shrink: 0;
+  padding: 20px;
+}
+section.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fafafa;
+}
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+  aside {
+    width: 100%;
+  }
+}
